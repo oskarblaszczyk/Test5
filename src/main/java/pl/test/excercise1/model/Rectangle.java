@@ -1,16 +1,14 @@
 package pl.test.excercise1.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NonNull;
-import lombok.ToString;
-import pl.test.excercise1.interfaces.ShapeController;
+import lombok.*;
+import pl.test.excercise1.controller.ShapeController;
 
-
-@AllArgsConstructor
-@Getter
 @ToString
-public class Rectangle extends Shape{
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class Rectangle implements ShapeController {
     @NonNull
     private double width;
     @NonNull

@@ -1,13 +1,14 @@
 package pl.test.excercise1.model;
 
-import lombok.AllArgsConstructor;
-import lombok.NonNull;
-import lombok.ToString;
-import pl.test.excercise1.interfaces.ShapeController;
+import lombok.*;
+import pl.test.excercise1.controller.ShapeController;
 
-@AllArgsConstructor
 @ToString
-public class Square extends Shape{
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class Square implements ShapeController {
     @NonNull
     private double a;
 

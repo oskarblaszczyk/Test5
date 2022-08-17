@@ -1,1 +1,1 @@
-[{"type":"square"},{"type":"circle"}]
+{"shapes":[{"type":"Square","a":2.0},{"type":"circle","radius":2.0},{"type":"rectangle","width":6.0,"height":6.0}]}

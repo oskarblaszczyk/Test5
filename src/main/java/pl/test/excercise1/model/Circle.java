@@ -1,14 +1,14 @@
 package pl.test.excercise1.model;
 
+import lombok.*;
+import pl.test.excercise1.controller.ShapeController;
 
-import lombok.AllArgsConstructor;
-import lombok.NonNull;
-import lombok.ToString;
-import pl.test.excercise1.interfaces.ShapeController;
-
-@AllArgsConstructor
 @ToString
-public class Circle extends Shape{
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class Circle implements ShapeController {
     @NonNull
     private double radius;
 
